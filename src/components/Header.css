@@ -1,0 +1,93 @@
+/* Ensure entire header and nav have blue backgrounds */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(220, 80%, 50%); /* Consistent blue background */
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: hsl(220, 80%, 50%); /* Same blue background for nav */
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+nav a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover, .dropbtn:hover {
+    color: #61dafb;
+    background-color: #005f99;  /* Blue hover effect */
+    border-radius: 5px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Blue dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(220, 80%, 60%); /* Light blue background for dropdown */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 123, 255, 0.5); /* Light blue shadow */
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    transition: background-color 0.3s;
+}
+
+/* Blue hover effect for dropdown items */
+.dropdown-content a:hover {
+    background-color: #005f99; /* Slightly darker blue on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #61dafb;
+}
